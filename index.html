@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+ <div class="outside">
+  <form action="">
+    <h1>Application to be my friend</h1>
+    <p id="NB"><strong>Note:</strong> Form is to be completed at least 21 days prior to meetup</p>
+
+    <!-- Personal Details -->
+    <fieldset>
+      <legend><strong> Pesonal Details</strong></legend>
+      <label for="name">Name: </label>
+      <input type="text" id="name" placeholder="Enter your name" name="name"><br>
+
+      <br> <label for="address">Address: </label>
+      <input type="text" id="address" placeholder="Enter your address" name="address"><br>
+
+      <br> <label for="email">Email: </label>
+      <input type="email" id="email" placeholder="Enter your email" name="email"><br>
+
+      <br> <label for="pnumber">Phone Number: </label>
+      <input type="number" id="pnumber" placeholder="Enter your number" name="pnumber"><br>
+      
+      <br> <label for="iq">IQ: </label>
+      <input type="number" id="iq" placeholder="Enter IQ" name="iq"><br>
+    
+      <!-- Radio Buttons -->
+      <p>Gender</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br>
+
+      <br> <label for="date">Date of Proposed Meeting: </label>
+      <input type="date" id="date" name="date"><br>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <p>Check All That Apply</p>
+      <input type="checkbox" id="tattoo" name="tattoo" >
+      <label for="tattoo">I have tattoos and/or piercings</label><br>
+      
+      <input type="checkbox" id="age" name="age" >
+      <label for="age">I am more than 2 years older than your daughter</label><br>
+      
+      <input type="checkbox" id="van" name="van" >
+      <label for="van">I own a panel van or V8 ute</label><br>
+      
+      <input type="checkbox" id="work" name="work" >
+      <label for="work">I work full-time</label><br>
+
+      <input type="checkbox" id="money" name="money" >
+      <label for="money">My parents are rich</label><br>
+
+      <input type="checkbox" id="venue" name="venue" >
+      <label for="venue">Is the date at a well lit public location</label><br>
+    </fieldset>
+    <fieldset>
+      <br>
+      <!-- Dropdown Menus -->
+      <label for="cars">Political Persuasion:  </label>
+      <select name="persuation" id="persuation">
+        <option value="left_wing">Left wing</option>
+        <option value="right_wing">Right wing</option>
+        <option value="conservative">Conservative</option>
+        <option value="nazi">Nazi</option>
+      </select>
+
+      <label for="cars"> Education Level Completed:</label>
+      <select name="persuation" id="persuation">
+        <option value="university">University</option>
+        <option value="college">College</option>
+        <option value="high school">High school</option>
+        <option value="none">None</option>
+      </select>
+    </fieldset>
+    
+    <!-- Text Area -->
+    <fieldset>
+      <legend><strong> Essay Section</strong></legend>
+      <label for="reason">In 50 words or more explain why you want to date my daughter</label><br>
+      <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Enter text here">
+      </textarea><br><br>
+      
+      <label for="references">Please upload contact details for 2 references</label><br>
+      <textarea id="references" name="references" rows="4" cols="50" placeholder="Enter text here">
+      </textarea> 
+
+      <br><br><label for="Myfile">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here: </label>
+      <input type="file" id="myFile" name="filename">
+    </fieldset>
+    <div class="send_form">
+      <br><br><input type="submit">
+    </div>
+  </form>
+</div>
+</body>
+</html>
